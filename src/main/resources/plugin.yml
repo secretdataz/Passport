@@ -1,0 +1,16 @@
+name: Passport
+version: ${project.version}
+main: app.jittapan.passport.Passport
+prefix: Passport
+authors: [secretdataz]
+description: MySQL-based whitelist plugin
+website: https://jittapan.app
+commands:
+  passport:
+    description: Manage the whitelist
+    permission: passport.admin
+    usage: "/passport <add|remove> [name]"
+permissions:
+  passport.admin:
+    default: op
+    description: Can manage the whitelist

@@ -1,0 +1,11 @@
+sql:
+  hostname: localhost
+  port: 3306
+  database: bukkit
+  username: bukkit
+  password: bukkit
+# Interval in seconds which Passport refreshs its whitelist cache
+whitelistRefreshRate: 300
+messages:
+  noWhitelist: You are not whitelisted on this server
+  banned: You have been banned from this server
