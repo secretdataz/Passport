@@ -32,6 +32,7 @@ class Passport: JavaPlugin(), Listener {
         hikariDataSource.jdbcUrl = "jdbc:mysql://" + config.getString("sql.hostname") + ":" + config.getString("sql.port") + "/" + config.getString("sql.database") + "?useSSL=false"
         hikariDataSource.username = config.getString("sql.username")
         hikariDataSource.password = config.getString("sql.password")
+        hikariDataSource.setMaxLifetime(600 * 1000)
     }
 
     fun createTable() {
